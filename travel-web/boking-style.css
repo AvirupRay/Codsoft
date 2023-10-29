@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.booking {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+}
+
+#bg-img {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    /* filter: brightness(.92); */
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.logo h1 {
+    font-size: 50px;
+    font-family: Agbalumo;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.text-form {
+    /* background-color: #ff9a9a98; */
+    background-color: rgba(243, 229, 211, 0.349);
+    width: 40vw;
+    height: 80vh;
+    backdrop-filter: blur(3px);
+    /* box-shadow: 1px 1px 15px rgb(187, 93, 93); */
+    box-shadow: 1px 1px 15px black;
+    border-radius: 30px;
+}
+
+.heading-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5vw;
+    color: #000;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 8px #000; */
+    padding: 0 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 1.2vh;
+    text-wrap: nowrap;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: 90%;
+    padding: 2vw;
+    color: #000;
+}
+
+.booking .book-form .flex .inputBox input {
+    width: 100%;
+    padding: .5rem;
+    border: .13rem solid rgba(0, 0, 0, 0.541);
+    border-radius: 20px;
+    font-size: 1.8vh;
+    background-color: transparent;
+    color: #000;
+    outline: none;
+}
+
+.booking .book-form .flex .inputBox input::placeholder {
+    color: #1a1a1ab7;
+}
+
+.inputBox:nth-child(5) {
+    color: aqua;
+    gap: 1.2rem;
+    display: flex;
+}
+
+.inputBox:nth-child(5) div {
+    flex: 1;
+    padding: 1rem 0;
+
+}
+
+.inputBox:nth-child(6) {
+    color: aqua;
+    gap: 1.2rem;
+    display: flex;
+}
+
+.inputBox:nth-child(6) div {
+    flex: 1;
+    padding: 1rem 0;
+    object-fit: contain;
+    overflow: auto;
+}
+
+.booking .book-form .flex .inputBox span {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #000;
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: .2rem;
+}
+
+.booking .book-form .btn {
+    background-color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    padding: 1.2vh 1.5vw;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 15px;
+    border: none;
+    font-size: .9vw;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: clip;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+}
+
+.booking .book-form .btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.548);
+    transform: translateY(-5px);
+    scale: 1.2;
+    transition: 0.3s linear;
+}
+
+.btn:active {
+    background-color: rgb(0, 103, 172);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(197, 197, 197);
+    color: rgb(37, 37, 37);
+}
+
+.packageShower {
+    /* position:absolute; */
+    display: none;
+    /* background-color: rgba(41, 41, 41, 0.856);
+top: 50%;
+right: -90%;
+transform: translate(0,-50%);
+height: 30vh;
+width: 20vw;
+padding: 1vw;
+text-align: center;
+border-radius: 1rem; */
+}
+
+.packageShower img {
+    height: 22vh;
+    width: 18vw;
+    border-radius: 1rem;
+    margin-bottom: 1.5vh;
+    object-fit: cover;
+}
+
+.packageShower input {
+    padding: 1vw;
+    margin: .8rem;
+    text-align: center;
+    cursor: default;
+}
+
+
+
+/* for sweetAlert */
+body.swal2-shown>[aria-hidden="true"] {
+    transition: 0.1s filter;
+    filter: blur(10px);
+}
